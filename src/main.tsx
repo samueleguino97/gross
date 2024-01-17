@@ -35,7 +35,7 @@ const appRoute = new Route({
 });
 
 const homeRoute = new Route({
-  getParentRoute: () => appRoute,
+  getParentRoute: () => rootRoute,
   path: "/",
   component: Authentication,
 });
@@ -52,16 +52,10 @@ const kitchenOrders = new Route({
   component: KitchenOrders,
 });
 
-const authRoute = new Route({
-  getParentRoute: () => rootRoute,
-  path: "auth",
-  component: Authentication,
-});
-
 const routeTree = rootRoute.addChildren([
-  appRoute.addChildren([ordersRoute, homeRoute]),
+  appRoute.addChildren([ordersRoute]),
   kitchenOrders,
-  authRoute,
+  homeRoute,
 ]);
 
 const router = new Router({ routeTree });
