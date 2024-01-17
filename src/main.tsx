@@ -22,7 +22,7 @@ const rootRoute = new RootRoute({
     return (
       <>
         <Outlet />
-        <TanStackRouterDevtools />
+        {import.meta.env.DEV && <TanStackRouterDevtools />}
       </>
     );
   },
