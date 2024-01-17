@@ -4,7 +4,7 @@ import Input from "../components/input";
 import Button from "../components/button";
 function Authentication() {
   return (
-    <div className="flex flex-col h-screen overflow-hidden">
+    <div className="flex flex-col overflow-hidden h-dvh">
       <div className="container flex flex-col items-center flex-1 px-4 pt-16 mx-auto">
         <img
           src={Logo}
