@@ -10,7 +10,6 @@ import {
   RouterProvider,
 } from "@tanstack/react-router";
 
-import Home from "./routes/home.tsx";
 import AppLayout from "./routes/app-layout.tsx";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Orders from "./routes/orders.tsx";
